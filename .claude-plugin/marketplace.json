@@ -1,5 +1,6 @@
 {
   "name": "beanstech",
+  "description": "Marketplace BeansTech — ferramentas jurídicas de produtividade. OCR Beans: extrator de texto de processos judiciais brasileiros (PDF/imagens), 100% offline, verificado contra o executável original.",
   "owner": {
     "name": "BeansTech",
     "url": "https://beanstech.io"
