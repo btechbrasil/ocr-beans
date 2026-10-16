@@ -1,0 +1,21 @@
+# OCR Beans — versiona SOMENTE código e documentação.
+# Documentos jurídicos, PDFs, extrações e artefatos ficam FORA do git (privacidade).
+
+# Ignora tudo por padrão
+/*
+
+# ...e inclui explicitamente o que é código/config/docs
+!/.gitignore
+!/README.md
+!/pyproject.toml
+!/requirements.txt
+!/Dockerfile
+!/OCR Beans.spec
+!/ocr_beans/
+!/ocr_beans_app.py
+!/docs/
+
+# Dentro das pastas incluídas, ignora lixo
+__pycache__/
+*.pyc
+.mimosa/

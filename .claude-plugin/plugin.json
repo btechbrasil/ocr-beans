@@ -1,0 +1,19 @@
+{
+  "name": "ocr-beans",
+  "version": "1.0.0",
+  "description": "OCR Beans — extrator de texto de processos judiciais brasileiros (PDF e imagem). Motor PyMuPDF + Tesseract 100% offline: detecta fontes corrompidas de tribunais (TJSP/TRF/STJ) e aplica OCR automaticamente. Verificado contra o OCRBeans.exe original: 475/475 páginas idênticas.",
+  "author": {
+    "name": "BeansTech"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ocr",
+    "legal",
+    "pdf",
+    "tesseract",
+    "judicial",
+    "offline",
+    "portuguese"
+  ],
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "ocr-beans",
+  "version": "1.0.0",
+  "description": "OCR Beans — extrator de texto de processos judiciais brasileiros (PDF e imagem). Motor PyMuPDF + Tesseract 100% offline: detecta fontes corrompidas de tribunais (TJSP/TRF/STJ) e aplica OCR automaticamente. Verificado contra o OCRBeans.exe original: 475/475 páginas idênticas.",
+  "description_i18n": {
+    "en": "OCR Beans — text extractor for Brazilian court documents (PDF and images). PyMuPDF + Tesseract engine, 100% offline: detects corrupted court fonts and applies OCR automatically. Verified against the original OCRBeans.exe: 475/475 identical pages.",
+    "zh-CN": "OCR Beans — 巴西司法文书文本提取工具（PDF 与图像）。PyMuPDF + Tesseract 引擎，完全离线：自动检测法院文档的损坏字体并执行 OCR。已对照原版 OCRBeans.exe 验证：475/475 页结果一致。"
+  },
+  "author": {
+    "name": "BeansTech",
+    "url": "https://beanstech.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ocr",
+    "legal",
+    "pdf",
+    "tesseract",
+    "brazilian-portuguese",
+    "judicial",
+    "offline"
+  ],
+  "skills": "./skills",
+  "mcpServers": {
+    "ocr-beans": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--no-project",
+        "--python", "3.12",
+        "--with", "pymupdf==1.28.2",
+        "--with", "pytesseract==0.3.13",
+        "--with", "Pillow==12.3.0",
+        "--with", "mcp==2.3.0",
+        "python3",
+        "${CLAUDE_PLUGIN_ROOT}/ocr_beans/mcp_server.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      },
+      "timeoutMs": 600000
+    }
+  }
+}
